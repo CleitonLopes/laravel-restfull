@@ -1,0 +1,61 @@
+APIRestfull Laravel
+*******************
+
+-  composer create-project --prefer-dist laravel/laravel project
+
+- php artisan make:migration create_account
+
+- Configurado migration accounts
+
+- php artisan make:migration create_bank
+
+- Configurado mitration banks
+
+- Criando seed
+
+- php artisan make:seed banks
+
+- Configurado seed banks
+
+- Rodando as migrate
+
+- php artisan migrate
+
+- Rodando as Seeds
+
+- php artisan db:seed
+
+Listando recurso paginados
+***************************
+
+- Criand controllers
+
+- php artisan make:controller Api/BanksController --resource
+
+- Criando uma rota dentro de api.php dentro da pasta routes, pois estamos fazendo uma api
+
+- Criando model Bank
+
+- php artisan make:model Bank
+
+- configurando model Bank
+
+Ordenando e limitando paginação atravez da api
+***********************************************
+
+- Criado filtros no controler
+
+- Traz os dados da pagina selecionada
+- http://localhost:8000/api/banks?page=2
+
+- Traz ordenado por code e ordem crescente com o limite de 2
+- http://localhost:8000/api/banks?order=code,asc&limit=2
+
+Filtrando dados
+***************
+
+- Condição where
+- http://localhost:8000/api/banks?where[id]=2
+
+- Condição like, title like Caixa
+- http://localhost:8000/api/banks?like=title,Caixa
