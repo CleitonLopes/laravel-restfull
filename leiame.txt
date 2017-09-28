@@ -59,3 +59,40 @@ Filtrando dados
 
 - Condição like, title like Caixa
 - http://localhost:8000/api/banks?like=title,Caixa
+
+Inserindo registro na api
+*************************
+
+- usando o postman passando um post com title e code para inserir no model Bank
+- No model Bank configurando a propriedade fillable para gravar os dados
+
+Fazendo update no banco
+***********************
+
+- Alterado com o metodo put passando o id
+
+Removendo
+*********
+
+- Mesma coisa que o metodo update, mas usando o metodo delete
+
+Reaproveitando o crud da api de forma rapida
+********************************************
+
+- Removendo o crud feito no BanksController e colocado em um Trait
+- criar folder \app\Traits ApiControllerTrait.php com o nome de trait ApiControllerTrait
+- Configurado BanksControler chamando a trait
+
+- criando controllers Accounts sem o parametro resources
+- php artisan make:controller Api/AccountsController
+- php artisan make:model Account
+- configurado fillable em account
+- criar rota accounts
+- configurando aqui para o controller receber a trait assim ela já herda os mesmos métodos que o BanksController
+fazendo o reapreveitamento de código
+
+Relacionamentos
+***************
+
+- Criar metodo no model Accounts para fazer o relacionamento, ver documentação
+
