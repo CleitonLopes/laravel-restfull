@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9269700e-a7a3-4a21-b5de-a9ae8f82f540" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/app/Account.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/app/Http/Controllers/Api/AccountsController.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/app/Traits/ApiControllerTrait.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/laravel-restfull.iml" afterPath="$PROJECT_DIR$/.idea/laravel-restfull.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -365,12 +368,12 @@
       <option name="presentableId" value="Default" />
       <updated>1506387574148</updated>
       <workItem from="1506387575738" duration="5895000" />
-      <workItem from="1506560284710" duration="6117000" />
+      <workItem from="1506560284710" duration="6217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12012000" />
+    <option name="totallyTimeSpent" value="12112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="24" width="1869" height="1056" extended-state="6" />

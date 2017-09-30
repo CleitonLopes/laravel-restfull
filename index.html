@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Consumindo api</title>
+</head>
+<body>
+	
+
+</body>
+
+<script>
+	
+
+var xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onreadystatechange = function () {
+
+	if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+
+		console.log(xmlhttp.status, xmlhttp.responseText);
+
+	}
+
+}
+
+xmlhttp.open('GET', 'http://localhost:8000/api/accounts');
+
+xmlhttp.setRequestHeader('Authorization', 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA1NDM0ZDBmN2JjZWZjODQ0ODUzYTk2ODg1ZTkyNzI4OWQyYWY5OWI5ODZiZDE1YzEzMGEyZWM1ODNjYWVlZGU5Y2EzYzIyYzQzMTI3ZGUxIn0.eyJhdWQiOiIyIiwianRpIjoiMDU0MzRkMGY3YmNlZmM4NDQ4NTNhOTY4ODVlOTI3Mjg5ZDJhZjk5Yjk4NmJkMTVjMTMwYTJlYzU4M2NhZWVkZTljYTNjMjJjNDMxMjdkZTEiLCJpYXQiOjE1MDY3ODg2MTMsIm5iZiI6MTUwNjc4ODYxMywiZXhwIjoxNTM4MzI0NjEzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.CTLmWhZSM26jIBNLUF4UPETLCy-DvD2FasdslomrfHu3uHWsf6UQH2RHrVy6jSAU90-H5gmUnjiTN-MYmceB-y2IEREnQsi4cK16nauLJH-ioKkF_hLwUqkuRqxL5ipG0bfqe6NcIvBZAG8irsYK8A-M_jVguNYj9X6_IBDlstE8TfA8BDzVwN92LivvnSMwLI0d1so5hgHObMEqM00Hm5aL90paF9Lf5H3sXmUCTu8q09a1XwvH6TXSOhCvwW1u-0KvQvG0ZX3XBcqF5c7RVu8q23p5dSkxnfTl86QKUuG9twFVxNRQX9xhtb4QS3TVGIKuF6t4cbqLB1WC_RUDeZFTnu-bLodNGhg9kY8xHzWNWAdV9vg9PwZa_i7mGvqJy60vnZRd09ZfhP2pasRZFIuHa_rWohhPrHy5JAzDQLtUXpe3jBHSWz0cUvgjbaXH3mFB2JmY2iAjm4UWdM6z7APtIKG1_9UovfjYJWcOY6q858j9vmgrP6hmEOfTNUShBKxltxOGHjmsktytZL9qPbJ3WX6ClXnICd0S3GDO1L4Qv1IJmLzkoxxGxmosxGJRyr86sKnoswdKzvwpELWvBMHyr8P6p9XUsqMciVwMtH0D78Occ9L2j52UeWEdylOBua3ub0GYwtGoS7w3q3mmQaqFC1NrjCyhrNTnrnMd19s');
+
+xmlhttp.send();
+
+
+</script>
+</html>
